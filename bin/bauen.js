@@ -5,4 +5,3 @@
  * Defines Bauen command line interface.
  */
 
-'use strict';
