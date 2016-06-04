@@ -3,9 +3,15 @@
   "files": {
     "dockerimage": "/path/dockerfile",
     "resources": "resources.json",
-    "instances": "instances.json"
+    "instances": ".instances.json",
+    "environmentVariables": ".env.json"
   },
   "scripts": {
     "init": "npm run start"
-  }
+  },
+  "environmentVariables": [
+    "EXAMPLE_DB_PATH"
+    "EXAMPLE_DB_USER",
+    "EXAMPLE_DB_PWD"
+  ]
 }

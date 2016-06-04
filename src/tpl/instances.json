@@ -1,10 +1,10 @@
 {
   "blocks": {
-    "pizza": {
+    "mongodb": {
       "type": "http|https|tcp|websocket",
       "ips": {
-        "private": "192.168.10.10",
-        "public": "10.10.10.10"
+        "private": "192.168.10.10:80",
+        "public": "10.10.10.10:3000"
       }
     },
     "nachos": {

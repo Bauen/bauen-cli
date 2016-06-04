@@ -1,16 +1,52 @@
 {
   "blocks": {
     "pizza": {
-      "type": "local | http | https| tcp | websocket",
-      "source": "git@github.com:Bauen/bauen-cli.git"
+      "source": "git@github.com:Bauen/bauen-cli.git",
+      "network": {
+        "private": {
+          "allowedHosts": [
+            "google.com",
+            "facebook.com"
+          ],
+          "openPorts": [
+            3000,
+            80
+          ]
+        },
+        "public": false
+      }
     },
     "nachos": {
-      "type": "local | http | https| tcp | websocket",
-      "source": "git@github.com:Bauen/bauen-cli.git"
+      "source": "git@github.com:Bauen/bauen-cli.git",
+      "network": {
+        "public": {
+          "allowedHosts": [
+            "google.com",
+            "facebook.com"
+          ],
+          "openPorts": [
+            3000,
+            80
+          ]
+        },
+        "private": false
+      }
     },
     "tacos": {
-      "type": "local | http | https| tcp | websocket",
-      "source": "git@github.com:Bauen/bauen-cli.git"
+      "source": "git@github.com:Bauen/bauen-cli.git",
+      "network": {
+        "public": {
+          "allowedHosts": [
+            "google.com",
+            "facebook.com"
+          ],
+          "openPorts": [
+            3000,
+            80
+          ]
+        },
+        "private": false
+      }
     }
   }
 }
