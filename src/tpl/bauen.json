@@ -1,0 +1,11 @@
+{
+  "name": "test",
+  "files": {
+    "dockerimage": "/path/dockerfile",
+    "resources": "resources.json",
+    "instances": "instances.json"
+  },
+  "scripts": {
+    "init": "npm run start"
+  }
+}

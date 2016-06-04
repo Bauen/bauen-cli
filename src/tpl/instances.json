@@ -1,0 +1,25 @@
+{
+  "blocks": {
+    "pizza": {
+      "type": "http|https|tcp|websocket",
+      "ips": {
+        "private": "192.168.10.10",
+        "public": "10.10.10.10"
+      }
+    },
+    "nachos": {
+      "type": "http|https|tcp|websocket",
+      "ips": {
+        "private": "192.168.10.10",
+        "public": "10.10.10.10"
+      }
+    },
+    "tacos": {
+      "type": "http|https|tcp|websocket",
+      "ips": {
+        "private": "192.168.10.10",
+        "public": "10.10.10.10"
+      }
+    }
+  }
+}

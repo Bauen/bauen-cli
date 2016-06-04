@@ -1,0 +1,16 @@
+{
+  "blocks": {
+    "pizza": {
+      "type": "local | http | https| tcp | websocket",
+      "source": "git@github.com:Bauen/bauen-cli.git"
+    },
+    "nachos": {
+      "type": "local | http | https| tcp | websocket",
+      "source": "git@github.com:Bauen/bauen-cli.git"
+    },
+    "tacos": {
+      "type": "local | http | https| tcp | websocket",
+      "source": "git@github.com:Bauen/bauen-cli.git"
+    }
+  }
+}
