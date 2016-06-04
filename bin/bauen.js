@@ -8,9 +8,13 @@
 // Load dependencies.
 const BauenAPI = require('../lib/bauen.api');
 const Console = require('../lib/console.api');
+const Block = require('../lib/block.api');
 
 // Scaffold out Bauen object.
 BauenAPI.prototype.console = new Console();
+BauenAPI.prototype.api = {
+  block: Block,
+};
 
 // Create a new instance of the CLI.
 const Bauen = new BauenAPI();
