@@ -8,31 +8,22 @@
 // Load dependencies.
 const BauenAPI = require('../lib/bauen.api');
 const Console = require('../lib/console.api');
-const Block = require('../lib/block.api');
+const Project = require('../lib/project.api');
 
 // Scaffold out Bauen object.
 BauenAPI.prototype.console = new Console();
 BauenAPI.prototype.api = {
-  block: Block,
+  project: Project
 };
 
 // Create a new instance of the CLI.
-const Bauen = new BauenAPI();
+const BauenCLI = new BauenAPI();
 
-// Initialize the command line interface properties.
-Bauen.initializeCli()
-
-// Initialize the current bauen project.
-.then(() => {
-  Bauen.initializeProject();
-})
-
-// Parse command line input and execute.
-.then(() => {
-  Bauen.execute();
-})
-
-// Catch any errors and surface them to the user.
-.catch((reason) => {
-  Bauen.console.log(reason, 'error');
-});
+// Initialize cli, project, and commands.
+// Then execute the cli with any given params, and log errors.
+BauenCLI
+  .initializeCli()
+  .then(() => BauenCLI.initializeProject())
+  .then(() => BauenCLI.initializeCommands())
+  .then(() => BauenCLI.execute())
+  .catch((reason) => BauenCLI.console.log(reason, 'error'));

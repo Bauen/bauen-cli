@@ -10,7 +10,7 @@
     "init": "npm run start"
   },
   "environmentVariables": [
-    "EXAMPLE_DB_PATH"
+    "EXAMPLE_DB_PATH",
     "EXAMPLE_DB_USER",
     "EXAMPLE_DB_PWD"
   ]
